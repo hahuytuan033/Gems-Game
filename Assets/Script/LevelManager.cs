@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
 
     private void Awake()
     {
-        //unlock level
+        //unlock
         int unlockedLevel = PlayerPrefs.GetInt("UnlockedLevel", 1);
         for (int i = 0; i < buttons.Length; i++)
         {
