@@ -42,5 +42,4 @@ public class LevelManager : MonoBehaviour
         string levelName = "Level " + levelId;
         SceneManager.LoadScene(levelName);
     }
-
 }
