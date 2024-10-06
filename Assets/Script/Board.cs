@@ -9,11 +9,13 @@ public class Board : MonoBehaviour
     public GameObject tilePrefab;
     private BackgroundTile[,] allTiles;
     public GameObject[] dots;
+    public GameObject[,] allDots;
 
     // Start is called before the first frame update
     void Start()
     {
         allTiles = new BackgroundTile[width, height];
+        allDots = new GameObject[width, height];
         SetUp();
     }
 
@@ -31,6 +33,7 @@ public class Board : MonoBehaviour
                 GameObject dot = Instantiate(dots[dotToUse], tempPosition, Quaternion.identity);
                 dot.transform.parent = this.transform;
                 dot.name = "( " + i + ", " + j + " )";
+                allDots[i, j]= dot;
             }
         }
     }
