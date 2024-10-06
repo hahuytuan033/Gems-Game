@@ -45,7 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401b66dbc748448468b98cff50e9e3b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dots: []
+  dots:
+  - {fileID: 4115992244556813938, guid: 51736cfa10b09e74381b92c1600adfd1, type: 3}
+  - {fileID: 2137254470789138634, guid: 2c07515e80b6d7f4cb14914076837f8e, type: 3}
+  - {fileID: 5072003555325603642, guid: 66446917ef8a4d54281e70c361cb7082, type: 3}
+  - {fileID: 6194987880009148977, guid: dd2b31f1b13d2fc4ca9dbef01378a744, type: 3}
 --- !u!212 &-2662343533560153903
 SpriteRenderer:
   m_ObjectHideFlags: 0
