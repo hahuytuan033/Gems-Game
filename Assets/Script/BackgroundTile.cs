@@ -8,7 +8,7 @@ public class BackgroundTile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Initialize();
+        // Initialize();
     }
 
     // Update is called once per frame
@@ -17,11 +17,11 @@ public class BackgroundTile : MonoBehaviour
         
     }
 
-    void Initialize()
-    {
-        int dotToUse= Random.Range(0, dots.Length);
-        GameObject dot= Instantiate(dots[dotToUse], transform.position, Quaternion.identity);
-        dot.transform.parent= this.transform;
-        dot.name= this.gameObject.name;
-    }
+    // void Initialize()
+    // {
+    //     int dotToUse= Random.Range(0, dots.Length);
+    //     GameObject dot= Instantiate(dots[dotToUse], transform.position, Quaternion.identity);
+    //     dot.transform.parent= this.transform;
+    //     dot.name= this.gameObject.name;
+    // }
 }
