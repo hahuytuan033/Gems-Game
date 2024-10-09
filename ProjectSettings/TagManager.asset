@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Lock
+  - green stone
+  - blue stone
+  - yellow stone
+  - pink stone
   layers:
   - Default
   - TransparentFX
