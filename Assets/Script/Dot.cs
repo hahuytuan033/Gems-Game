@@ -55,14 +55,18 @@ public class Dot : MonoBehaviour
         {
             // move towards the target
             tempPosition = new Vector2(targetX, transform.position.y);
-            transform.position = Vector2.Lerp(transform.position, tempPosition, .4f);
+            transform.position = Vector2.Lerp(transform.position, tempPosition, .6f);
+            if(board.allDots[col, row]= this.gameObject)
+            {
+                board.allDots[col, row]= this.gameObject;
+            }
         }
         else
         {
             //directly set the position
             tempPosition = new Vector2(targetX, transform.position.y);
             transform.position = tempPosition;
-            board.allDots[col, row] = this.gameObject;
+            // board.allDots[col, row] = this.gameObject;
         }
 
         // move to vertical
@@ -70,14 +74,18 @@ public class Dot : MonoBehaviour
         {
             // move towards the target
             tempPosition = new Vector2(transform.position.x, targetY);
-            transform.position = Vector2.Lerp(transform.position, tempPosition, .4f);
+            transform.position = Vector2.Lerp(transform.position, tempPosition, .6f);
+            if(board.allDots[col, row]= this.gameObject)
+            {
+                board.allDots[col, row]= this.gameObject;
+            }
         }
         else
         {
             //directly set the position
             tempPosition = new Vector2(transform.position.x, targetY);
             transform.position = tempPosition;
-            board.allDots[col, row] = this.gameObject;
+            // board.allDots[col, row] = this.gameObject;
         }
     }
 
